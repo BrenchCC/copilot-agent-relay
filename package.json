@@ -1,0 +1,25 @@
+{
+  "name": "copilot-relay",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "serve": "bun run bin/relay.ts serve",
+    "start": "bunx pm2 start ecosystem.config.cjs",
+    "stop": "bunx pm2 stop copilot-relay",
+    "restart": "bunx pm2 restart copilot-relay",
+    "logs": "bunx pm2 logs copilot-relay --nostream --lines 50",
+    "status": "bunx pm2 status",
+    "login": "bun run bin/relay.ts login",
+    "accounts": "bun run bin/relay.ts accounts",
+    "generate-secret": "bun run bin/relay.ts generate-secret",
+    "e2e": "bun run bin/e2e.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "typescript": "^5.7.0"
+  },
+  "dependencies": {
+    "pm2": "^6.0.14"
+  }
+}
