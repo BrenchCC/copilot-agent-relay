@@ -1,0 +1,8 @@
+node_modules/
+dist/
+data/accounts/
+data/audit.jsonl
+data/relay.key
+.relay-config.json
+.relay-config.local.json
+*.tmp

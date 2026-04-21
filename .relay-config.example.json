@@ -1,0 +1,12 @@
+{
+  "relaySecret": "replace-with-your-relay-secret",
+  "relayPort": 8787,
+  "relayBind": "127.0.0.1",
+  "dataDir": "./data",
+  "logLevel": "info",
+  "upstreamTimeoutMs": 300000,
+  "accountCooldownMs": 300000,
+  "sessionAffinityTtlMs": 3600000,
+  "tokenRefreshSkewS": 60,
+  "forceAgentInitiator": "session"
+}
